@@ -1,8 +1,13 @@
-const path = require('path');
-const { Sequelize } = require('sequelize');
+//import sequelize dependency
+const { Sequelize } = require('sequelize')
 
-// TODO - connect to db via sequelize
+//create a sequelize instance
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: 'awesomeDB.sqlite'
+})
 
-module.exports = {
-    sequelize
-};
+//The new Sequelize constructor creates a connection pool for connecting to our database and the options passed into the constructor specifies the ype of database that is being used (sqlite)
+
+//export our instance
+module.exports = sequelize

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "seed": "node seed-database.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "dependencies": {
     "jest": "27.5.1",
     "sequelize": "^6.21.4",
+    "sqlite": "^4.1.2",
     "sqlite3": "^5.0.11"
   }
 }
