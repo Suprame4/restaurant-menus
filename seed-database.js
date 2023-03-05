@@ -13,10 +13,11 @@ async function seedData(){
     await sequelize.sync({ force: true})
 
     //add seedMenu and seedRestaurant to each individual Menu and Restaurant models
-    await Menu.bulkcreate(seedMenu)
-    await Restaurant.bulkcreate(seedRestaurant)
+    await Menu.bulkCreate(seedMenu)
+    await Restaurant.bulkCreate(seedRestaurant)
 
     console.log("database seeded successfully")
 }
 
 seedData()
+

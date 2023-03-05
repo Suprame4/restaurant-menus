@@ -1,5 +1,6 @@
-const {sequelize} = require('../db');
+const sequelize = require('../db');
 const { DataTypes } = require('sequelize');
+console.log("test: ", sequelize)
 
 // TODO - create a Restaurant model
 const Restaurant = sequelize.define('Restaurant', {
